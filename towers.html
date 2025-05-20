@@ -1,0 +1,95 @@
+<!doctype>
+<html>
+<head>
+	<title>Towers</title>
+	<style type="text/css">
+		#board table{
+			border-collapse: collapse;
+		}
+		#board td{
+			border: 1px solid #111111;
+			height: 50px;
+			width: 50px;
+			text-align: center;
+			line-height: 10px;
+			color: black;
+			background-color: #999999;
+		}
+		
+		#pieces table{
+			border-collapse: collapse;
+		}
+		#pieces td{
+			border: 1px solid #111111;
+			height: 50px;
+			width: 50px;
+			text-align: center;
+			line-height: 10px;
+			color: black;
+			//background-color: #999999;
+		}
+		#trRed{
+			background-color: rgba(244,37,37,1);
+		}
+		#trOrange{
+			background-color: #fd9000;
+		}
+		#trYellow{
+			background-color: #fff700;
+		}
+		#trGreen{
+			background-color: #32d510;
+		}
+		#trBlue{
+			background-color: #17e3fa;
+		}
+		#trPurple{
+			background-color: #c44edf;
+		}
+	</style>
+	<script type="text/javascript">
+		pieces = [
+			{color:"red",size:1},{color:"red",size:2},{color:"red",size:3},
+			{color:"red",size:4},{color:"red",size:5},{color:"red",size:6},
+			{color:"orange",size:1},{color:"orange",size:2},{color:"orange",size:3},
+			{color:"orange",size:4},{color:"orange",size:5},{color:"orange",size:6},
+			{color:"yellow",size:1},{color:"yellow",size:2},{color:"yellow",size:3},
+			{color:"yellow",size:4},{color:"yellow",size:5},{color:"yellow",size:6},
+			{color:"green",size:1},{color:"green",size:2},{color:"green",size:3},
+			{color:"green",size:4},{color:"green",size:5},{color:"green",size:6},
+			{color:"blue",size:1},{color:"blue",size:2},{color:"blue",size:3},
+			{color:"blue",size:4},{color:"blue",size:5},{color:"blue",size:6},
+			{color:"purple",size:1},{color:"purple",size:2},{color:"purple",size:3},
+			{color:"purple",size:4},{color:"purple",size:5},{color:"purple",size:6}
+		];
+	</script>
+</head>
+<body>
+	<div id="board">
+		<h2>Towers Board</h2>
+		<table>
+			<tbody>
+				<tr><td>1</td><td>2</td><td>5</td><td>4</td><td>6</td><td>3</td></tr>
+				<tr><td>5</td><td>3</td><td>6</td><td>1</td><td>4</td><td>2</td></tr>
+				<tr><td>4</td><td>6</td><td>3</td><td>5</td><td>2</td><td>1</td></tr>
+				<tr><td>2</td><td>1</td><td>4</td><td>3</td><td>5</td><td>6</td></tr>
+				<tr><td>3</td><td>5</td><td>2</td><td>6</td><td>1</td><td>4</td></tr>
+				<tr><td>6</td><td>4</td><td>1</td><td>2</td><td>3</td><td>5</td></tr>
+			</tbody>
+		</table>
+	</div>
+	<div id="pieces">
+		<h2>Remaining Pieces</h2>
+		<table>
+			<tbody>
+				<tr id="trRed"><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+				<tr id="trOrange"><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+				<tr id="trYellow"><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+				<tr id="trGreen"><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+				<tr id="trBlue"><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+				<tr id="trPurple"><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>
